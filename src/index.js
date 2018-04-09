@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import Home from './components/Home';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
@@ -16,7 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route to='/' component={App}/>
+          <Route to='/' component={Home}/>
         </Switch>
       </div>
     </BrowserRouter>
